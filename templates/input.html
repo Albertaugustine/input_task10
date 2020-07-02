@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Document</title>
+</head>
+<body>
+    <div ng-controller="myCtrl" class="jumbotron text-center">
+        <h3>Welcome you are currently routed to the page - post.html</h3>
+        Enter your name:
+        <input type="text" ng-model="fnme"><br><br>
+        Enter your email:
+        <input type="email" name="mail" ng-model="ml"><br><br>
+        <input type="submit" value="submit" ng-click="trigr()">
+        <br>
+        <div ng-show="Isee">
+            
+            <p>{{fnme}}</p>
+            <p>{{ml}}</p>
+        </div>
+    </div>
+    
+</body>
+</html>
